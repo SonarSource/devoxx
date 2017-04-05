@@ -4,8 +4,6 @@ install: true
 addons:
   sonarqube:
     organization: "devoxx"
-    token:
-      secure: "018fb420f08cd9707b7fe711de5a715125aee9dc"
 jdk:
   - oraclejdk8
 script:
