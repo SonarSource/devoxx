@@ -3,6 +3,9 @@ package devoxx;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/*
+ * Why there are some dead stores at line 23 and 26 ?
+ */
 public class QuizzDeadStore {
 
   private static final Logger LOG = LoggerFactory
