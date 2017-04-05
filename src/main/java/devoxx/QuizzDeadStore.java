@@ -15,15 +15,15 @@ public class QuizzDeadStore {
     int amountOfMoney;
     switch (number) {
     case 0:
-      amountOfMoney = 1_000; // "A bit defensive but deserves a reward!"
+      amountOfMoney = 1_000;
       break;
     case 42:
       switch (playerAge) {
       case 42:
-        amountOfMoney = 10_000; // "Well done + extra bonus due to your age!"
+        amountOfMoney = 10_000; 
         break;
       default:
-        amountOfMoney = 5_000; // "Well done!"
+        amountOfMoney = 5_000; 
         break;
       }
     default:
