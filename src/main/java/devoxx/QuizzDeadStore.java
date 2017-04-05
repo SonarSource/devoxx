@@ -14,14 +14,8 @@ public class QuizzDeadStore {
     case 0:
       amountOfMoney = 1_000; // "A bit defensive but deserves a reward!"
       break;
-    case -1:
-      amountOfMoney = 0; // "Are you trying to hack me ?"
-      break;
     case 42:
       switch (playerAge) {
-      case 2:
-        amountOfMoney = 1; // "Are you kidding me?"
-        break;
       case 42:
         amountOfMoney = 10_000; // "Well done + extra bonus due to your age!"
         break;
