@@ -21,7 +21,7 @@ public class NullPointerDereference {
   }
 
 
-  public int foo(String animal){
+  public void foo(String animal){
     if(animal == null){
       animal.toString();
     }
