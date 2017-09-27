@@ -16,6 +16,7 @@ public class NullPointerDereference {
     if ("Antonio".equals(trimmedAnimal)) {
       return 1;
     }
+    System.out.println(animal.toString());
     return -1;
   }
 
