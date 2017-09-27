@@ -33,6 +33,18 @@ public class NullPointerDereference {
     }
   }
 
+    public void bar2(String animal){
+    if(animal == null){
+      animal.toString();
+    }
+  }
+
+      public void bar3(String animal){
+    if(animal == null){
+      animal.toString();
+    }
+  }
+
   private String trim(String animal) {
     return animal.trim();
   }
