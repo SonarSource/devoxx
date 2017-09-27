@@ -20,6 +20,13 @@ public class NullPointerDereference {
     return -1;
   }
 
+
+  public int foo(String animal){
+    if(animal == null){
+      animal.toString();
+    }
+  }
+
   private String trim(String animal) {
     return animal.trim();
   }
