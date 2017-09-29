@@ -27,6 +27,9 @@ public class NullPointerDereference {
     }
   }
 
+    
+    
+    
   public void bar(String animal){
     if(animal == null){
       animal.toString();
@@ -44,8 +47,15 @@ public class NullPointerDereference {
       animal.toString();
     }
   }
+    
+    public void bar4(String animal){
+        if(animal == null){
+            animal.toString();
+        }
+    }
 
   private String trim(String animal) {
     return animal.trim();
   }
+    
 }
