@@ -76,4 +76,10 @@ public class QuizzDeadStore {
   private void give(int amountOfMoney) {
     LOG.info("Yeah: " + amountOfMoney);
   }
+
+    public void foo(String animal){
+    if(animal == null){
+      animal.toString();
+    }
+  }
 }
