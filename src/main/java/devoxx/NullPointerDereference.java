@@ -16,10 +16,46 @@ public class NullPointerDereference {
     if ("Antonio".equals(trimmedAnimal)) {
       return 1;
     }
+    System.out.println(animal.toString());
     return -1;
   }
+
+
+  public void foo(String animal){
+    if(animal == null){
+      animal.toString();
+    }
+  }
+
+    
+    
+    
+  public void bar(String animal){
+    if(animal == null){
+      animal.toString();
+    }
+  }
+
+    public void bar2(String animal){
+    if(animal == null){
+      animal.toString();
+    }
+  }
+
+      public void bar3(String animal){
+    if(animal == null){
+      animal.toString();
+    }
+  }
+    
+    public void bar4(String animal){
+        if(animal == null){
+            animal.toString();
+        }
+    }
 
   private String trim(String animal) {
     return animal.trim();
   }
+    
 }
