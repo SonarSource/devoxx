@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 /*
  * Why there are some dead stores at line 23 and 26 ?
  */
-public class QuizzDeadStore {
+public class QuizzDeadStore2 {
 
   private static final Logger LOG = LoggerFactory
       .getLogger(QuizzDeadStore.class);

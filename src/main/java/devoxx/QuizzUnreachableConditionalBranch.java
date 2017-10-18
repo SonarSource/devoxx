@@ -8,4 +8,10 @@ public class QuizzUnreachableConditionalBranch {
     }
     return -1;
   }
+
+    public void bar(String car){
+    if(car == null){
+      car.toString();
+    }
+  }  
 }
