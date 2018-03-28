@@ -2,6 +2,8 @@ package devoxx;
 
 public class NullPointerDereference {
 
+  public String special = "Antonio";
+
   public int searchForAnimalID(String animal) {
     String trimmedAnimal = trim(animal);
     if (trimmedAnimal.equals("Antonio")) {
