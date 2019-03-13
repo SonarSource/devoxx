@@ -9,13 +9,14 @@ public class NullPointerDereferenceTest {
   private NullPointerDereference underTest = new NullPointerDereference();
 
   @Test
-  public void shouldSearchForAnimalID() {
-    assertEquals(underTest.searchForAnimalID("Zouheir"), -1);
+  @Ignore
+  public void shouldGetDogPaws() {
+    assertEquals(underTest.getNumberOfPawsPlusOne("dog"), 5);
   }
 
   @Test(expected = NullPointerException.class)
   @Ignore
   public void ignoredTestThatWouldCoverBug() {
-    underTest.searchForAnimalID("");
+    underTest.getNumberOfPawsPlusOne("");
   }
 }

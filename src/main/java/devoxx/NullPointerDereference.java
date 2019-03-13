@@ -1,17 +1,26 @@
 package devoxx;
 
 public class NullPointerDereference {
-
-  public int searchForAnimalID(String animal) {
+  
+  public int getNumberOfPawsPlusOne(String animal) {
     String trimmedAnimal = trim(animal);
-    if (trimmedAnimal.equals("Antonio")) {
-      return 1;
+    
+    int paws;
+    if ("dog".equals(trimmedAnimal)) {
+      paws = 4;
+    } else if (trimmedAnimal.equals("Antonio")) { // NullPointer issue raised
+      paws = 1;
+    } else if ("Centipede".equals(trimmedAnimal)) {
+      paws = 100;
+    } else {
+      throw new RuntimeException(String.format("Unknown Animal %s", trimmedAnimal));
     }
-    return -1;
+    // Quizz: What is the problem here?
+    return paws++;
   }
-
+  
   private String trim(String animal) {
-    if(animal.isEmpty()) {
+    if (animal.isEmpty()) {
       return null;
     }
     return animal.trim();
